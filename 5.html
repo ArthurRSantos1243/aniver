@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Animada de Amor</title>
+    <style>
+        body {
+            background-color: #D8BFD8; /* Fundo lilás */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            overflow: hidden;
+            padding: 50px;
+        }
+        .container {
+            background-color: #FFF0F5;
+            border: 5px dashed #8A2BE2;
+            padding: 30px;
+            border-radius: 20px;
+            display: inline-block;
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            font-size: 3em;
+            color: #800080;
+            animation: textBounce 1.5s infinite;
+        }
+        p {
+            font-size: 1.5em;
+            color: #4B0082;
+        }
+        .frufru {
+            width: 100px;
+            margin: 10px;
+        }
+        .foto-container {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        .foto {
+            width: 150px;
+            border-radius: 10px;
+            animation: slidePhoto 6s linear infinite;
+        }
+        .heart {
+            position: absolute;
+            font-size: 2em;
+            color: red;
+            animation: floatUp 3s infinite ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes textBounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes floatUp {
+            from { transform: translateY(0); opacity: 1; }
+            to { transform: translateY(-200px); opacity: 0; }
+        }
+        @keyframes slidePhoto {
+            0% { transform: translateX(-300px); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateX(800px); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Te amo meu amor!</h1>
+        <p>Não tenho palavras para dizer quanto te amo, <br> nem existe linguas possiveis para dizer issom <br> quero que saiba que sempre irei te amar não importa as circunstâncias ❤️.</p>
+        
+        
+        <!-- Fotos animadas -->
+        <div class="foto-container">
+            <img src="foto1.jpeg" alt="Nossa foto 1" class="foto" style="animation-delay: 4s;">
+            <img src="foto2.jpeg" alt="Nossa foto 2" class="foto" style="animation-delay: 3s;">
+            <img src="foto3.jpeg" alt="Nossa foto 3" class="foto" style="animation-delay: 2s;">
+        </div>
+        <br>
+
+        <p>Com todo meu amor, <br> [C.A]</p>
+    </div>
+
+    <!-- Muitos corações animados -->
+    <div class="heart" style="left: 10%; animation-delay: 0s;">❤️</div>
+    <div class="heart" style="left: 20%; animation-delay: 0.5s;">❤️</div>
+    <div class="heart" style="left: 30%; animation-delay: 1s;">❤️</div>
+    <div class="heart" style="left: 40%; animation-delay: 1.3s;">❤️</div>
+    <div class="heart" style="left: 50%; animation-delay: 1s;">❤️</div>
+    <div class="heart" style="left: 60%; animation-delay: 1.5s;">❤️</div>
+    <div class="heart" style="left: 70%; animation-delay: 1s;">❤️</div>
+    <div class="heart" style="left: 80%; animation-delay: 1.5s;">❤️</div>
+    <div class="heart" style="left: 90%; animation-delay: 4s;">❤️</div>
+    <div class="heart" style="left: 25%; animation-delay: 1.2s;">💖</div>
+    <div class="heart" style="left: 75%; animation-delay: 2.2s;">💖</div>
+    <div class="heart" style="left: 55%; animation-delay: 1.2s;">💖</div>
+</body>
+</html>
